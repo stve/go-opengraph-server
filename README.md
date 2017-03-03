@@ -46,3 +46,11 @@ Parsed data is returned as JSON:
   ]
 }
 ```
+
+## Caveats
+
+My use case was for fetching data from Vimeo and YouTube. I haven't tested other sites and some assumptions were made in generating JSON based on my specific needs that may not make sense or be applicable to other sites and their Open Graph data.
+
+## License
+
+MIT (c) Steve Agalloco. See [LICENSE](https://github.com/stve/alfred-ipaddress/blob/master/LICENSE.md) for details.
