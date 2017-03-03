@@ -23,7 +23,7 @@
 	],
 	"rootPath": "github.com/stve/go-opengraph-server",
 	"heroku": {
-    "install": ["."],
+		"install": ["."],
 		"goVersion": "go1.8"
 	}
 }
