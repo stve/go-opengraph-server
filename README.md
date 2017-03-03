@@ -1,6 +1,6 @@
 # go-opengraph-server
 
-A small microservice to retrieve OpenGraph data from websites and return as JSON.
+A small microservice to retrieve Open Graph data from websites and return as JSON.
 
 # Usage
 
