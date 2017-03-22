@@ -121,12 +121,17 @@ func extract(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.WriteHeader(http.StatusOK)
 	structuredData := structureMetaData(metaData)
 
-	if err := encoder.Encode(structuredData); err != nil {
-		panic(err)
+	response, err := json.Marshal(structuredData)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		writeError(encoder, err.Error())
+		return
 	}
+
+	w.WriteHeader(http.StatusOK)
+	w.Write(response)
 
 	return
 }
